@@ -1,3 +1,3 @@
-# Haskell Programs
+# Samples
 
-Assorted programs in haskell.
+Sample programs of various programming languages.
