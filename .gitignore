@@ -1,5 +1,6 @@
 *.o
 *.hi
+*.beam
 a.out
 DS_store
 *.swp
