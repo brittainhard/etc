@@ -11,6 +11,8 @@ func swap(x, y string) (string, string) {
 }
 
 func main() {
+    // It looks like this syntax is shorthand for assignment and type. You can
+    // set this without having to define the variable with a type.
     a, b := swap("Hello", "World")
     fmt.Println(a, b)
 }
