@@ -13,6 +13,8 @@ var (
 )
 
 func main() {
+    // Use %T to print tye type, and %v to print the value. These look like they
+    // are independent of the type. 
     fmt.Printf("Type %T Value %v\n", ToBe, ToBe)
     fmt.Printf("Type %T Value %v\n", MaxInt, MaxInt)
     fmt.Printf("Type %T Value %v\n", z, z)
