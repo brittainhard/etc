@@ -1,7 +1,7 @@
-#include "hello.h"
+#include "defers.h"
 
 
-void hello_world()
+void hello_defer()
 {
     printf("%s\n", "Hello world!");
 }
