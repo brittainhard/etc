@@ -34,3 +34,8 @@ unless you dynamically allocate the stuff.
 
 Defaults to settings each item in the list to some integer + 1. Can also group
 other variable declataions in here.
+
+## Type Conversions
+
+You can convert between long to short ints without any errors, but it will give
+you warnings (dependent on implementation I guess).
