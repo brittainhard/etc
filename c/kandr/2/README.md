@@ -39,3 +39,27 @@ other variable declataions in here.
 
 You can convert between long to short ints without any errors, but it will give
 you warnings (dependent on implementation I guess).
+
+Char is just a type of int according to this book. It is just an int without
+very much. That is, its a very small int or something. Unicode, anybody?
+
+### Ctypes
+
+First mention of Ctypes. Ctypes provides functions for checking for things, like
+if a thing is a digit and turning something into lower case.
+
+We don't necessarily now whether chars are unsigned or signed integers, and this
+may be dependant on the machine itself.
+
+As you suspected, in all tests, if it is anything but NULL then it works. Zero
+is NULL.
+
+If you have two operators of a lower and higher type, the lower type is
+converted to the higher type.
+
+Floats in an expression are not automatically converted to doubles. Math
+functions, like those in <math.h> use doubles. There are two reasons to use
+floats over doubles: 1) to save space in large arrays, and 2) to save
+computation time if you are having to compute a huge number of doubles.
+
+Does casting only really work for number types? That would make sense I think...

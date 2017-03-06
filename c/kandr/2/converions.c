@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+#include <assert.h>
 
 
 /**
@@ -12,13 +14,13 @@
 int atoi2(char s[]){
     int i, n;
     n = 0;
-    for(i = 0; s[i] >= '0' && s[i] <= '9'; i++){
+    for(i = 0; isdigit(s[i]); i++){
         n = 10 * n + (s[i] - '0');
     }
     return n;
 }
 
-int lower(int c)
+int lower2(int c)
 {
     if(c >= 'A' && c <= 'Z'){
         return c + 'a' - 'A';
@@ -29,6 +31,6 @@ int lower(int c)
 
 int main(int argc, char *argv[])
 {
-    printf("%d\n", atoi2("10"));
+    printf("%f\n", 1 + 0.1);
     return 0;
 }
