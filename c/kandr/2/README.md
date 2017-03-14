@@ -62,4 +62,27 @@ functions, like those in <math.h> use doubles. There are two reasons to use
 floats over doubles: 1) to save space in large arrays, and 2) to save
 computation time if you are having to compute a huge number of doubles.
 
+I want to do what I do better than anyone else. What I do is my special
+combination of the skills I have and the things I know. Other people will have
+similar such skills, and similar knowledge, but I want to be the best at doing
+those things and knowing those things.
+
 Does casting only really work for number types? That would make sense I think...
+
+## Increments
+
+I added all the relevant info in increments_and_decrements.c. Not too much
+interesting here.
+
+## Bitwise Operators
+
+Bitwise operators can only be used with integers, not floats. Chars though it
+can be used with.
+
+& - and
+| - or
+^ - xor
+<< - left shift
+>> - right_shift
+~ - complement
+
