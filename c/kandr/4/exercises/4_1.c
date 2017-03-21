@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     while (getline2(line, MAXLINE) > 0) {
         if (strindex(line, pattern) >= 0) {
             // Make this work with argv.
-            asser(0);
+            assert(0);
             printf("%s", line);
             found++;
         }
