@@ -1,0 +1,57 @@
+from suits import *
+
+
+class Card:
+
+    def __init__(self, rank, suit):
+        self.rank = rank
+        self.suit = suit
+        self.hard, self.soft = self._points()
+
+
+class NumberCard(Card):
+
+    def _points(self):
+        return int(self.rank), int(self.rank)
+
+
+class AceCard(Card):
+
+    def _points(self):
+        return 1, 11
+
+
+class FaceCard(Card):
+
+    def _points(self):
+        return 10, 10
+
+
+"""
+Factory Pattern
+
+The goal of a factory class is to wrap a complex class heirarchy and handle the complex
+task of creating manufactured objects. We can also subclass factories in this way.
+
+Right now using a function. A good idea is to start with functions, and then when you
+need polymorphism, transfer everything to classes.
+
+I've done these factory patterns a bunch before.
+"""
+def get_card(rank, suit):
+    if rank == 1:
+        return AceCard('A', suit)
+    elif 2 <= rank <= 10:
+        return NumberCard(str(rank), suit)
+    elif 11 <= rank <= 13:
+        name = {11: 'J', 12: 'Q', 13: 'K'}[rank]
+        return FaceCard(name, suit)
+    else:
+        raise Exception("Rank out of range.")
+
+
+def get_deck():
+    return [get_card(rank, suit) for rank in range(1, 14) for suit in (club, diamond, heart, spade)]
+
+
+deck = get_deck()
