@@ -19,5 +19,6 @@ int main(int argc, char *argv[])
     free(kelly);
     free(persons);
     return 0;
+    // CFLAGS motherfuckers
 }
 
