@@ -19,5 +19,3 @@ diamond = Suit("Diamond", DIAMOND_SYMBOL)
 heart = Suit("Heart", HEART_SYMBOL)
 spade = Suit("Spade", SPADE_SYMBOL)
 
-def test_suit():
-    assert 1

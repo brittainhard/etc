@@ -7,3 +7,5 @@ DS_store
 *.dSYM
 bin/
 pkg/
+*.pyc
+__pycache__

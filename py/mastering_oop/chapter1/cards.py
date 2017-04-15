@@ -1,6 +1,8 @@
 from suits import *
 
 
+__all__ = ["NumberCard", "AceCard", "FaceCard", "get_deck"]
+
 class Card:
 
     def __init__(self, rank, suit):
@@ -50,8 +52,23 @@ def get_card(rank, suit):
         raise Exception("Rank out of range.")
 
 
-def get_deck():
-    return [get_card(rank, suit) for rank in range(1, 14) for suit in (club, diamond, heart, spade)]
+def get_card_explicit(rank, suit):
+    if rank == 1:
+        return AceCard('A', suit)
+    elif 2 <= rank <= 10:
+        return NumberCard(str(rank), suit)
+    elif rank == 11:
+        return FaceCard('J', suit)
+    elif rank == 12:
+        return FaceCard('Q', suit)
+    elif rank == 13:
+        return FaceCard('K', suit)
+    else:
+        raise Exception("Rank out of range.")
+    
+
+def get_deck(func):
+    return [func(rank, suit) for rank in range(1, 14) for suit in (club, diamond, heart, spade)]
 
 
-deck = get_deck()
+deck = get_deck(get_card_explicit)

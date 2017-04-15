@@ -35,7 +35,7 @@ for k, v in x:
     cars[k][v[0]] = Car(v[1][0][1], v[1][1][1])
 # print(cars["chevy"]["silverado"].kind)
 
-beatles = defaultdict()
+beatles = defaultdict(list)
 beatles["john"] = 1
 beatles["paul"] = [1, 2, 3, 4]
 print(beatles)

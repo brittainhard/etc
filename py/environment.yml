@@ -2,3 +2,4 @@ name: oop
 dependencies:
     - python=3
     - pytest
+    - cython
