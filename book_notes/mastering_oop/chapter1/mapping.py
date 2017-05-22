@@ -1,3 +1,4 @@
+from functools import partial
 from cards import *
 
 
@@ -40,12 +41,28 @@ def tuple_mapping(rank, suit):
     """
     Ugly, but better.
     """
-    class_ = {
+    class_, rank_str = {
         1: (AceCard, 'A'),
         11: (FaceCard, 'J'),
         12: (FaceCard, 'Q'),
         13: (FaceCard, 'K')
     }.get(rank, (NumberCard, str(rank)))
+    return class_(rank_str, suit)
 
 
-deck = get_deck(tuple_mapping)
+def partial_mapping(rank, suit):
+    """
+    Ugly, but better.
+    """
+    partial_class = {
+        1: partial(AceCard, 'A'),
+        11: partial(FaceCard, 'J'),
+        12: partial(FaceCard, 'Q'),
+        13: partial(FaceCard, 'K')
+    }.get(rank, partial(NumberCard, str(rank)))
+    return partial_class(suit)
+
+
+deck = get_deck(partial_mapping)[0].suit.symbol
+# deck = get_deck(partial_mapping)
+print(deck)
