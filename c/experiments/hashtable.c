@@ -11,6 +11,8 @@
 struct nlist {
     struct nlist *next;
     char *name;
+
+    // Hash
     char *defn;
 };
 

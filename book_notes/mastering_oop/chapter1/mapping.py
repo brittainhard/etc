@@ -52,7 +52,12 @@ def tuple_mapping(rank, suit):
 
 def partial_mapping(rank, suit):
     """
-    Ugly, but better.
+    No friggin idea of how this is working, confusing as hell.
+
+    So basically, what we have here is that its return a partial function.
+    To make a partial function, you have to supply the arguments to call. In
+    this case, when you create the partial, you will supply it with the
+    arguments as soon as you call the partial function.
     """
     partial_class = {
         1: partial(AceCard, 'A'),
@@ -63,6 +68,5 @@ def partial_mapping(rank, suit):
     return partial_class(suit)
 
 
-deck = get_deck(partial_mapping)[0].suit.symbol
-# deck = get_deck(partial_mapping)
-print(deck)
+deck = get_deck(partial_mapping)[0]
+print(dir(deck))
