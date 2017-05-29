@@ -1,3 +1,5 @@
+__all__ = ["NumberCard", "AceCard", "FaceCard", "get_card"]
+
 class Card:
 
     def __init__(self, rank, suit, hard, soft):
@@ -28,7 +30,7 @@ class FaceCard(Card):
         super().__init__({11: 'J', 12: 'Q', 13: 'K'}[rank], suit, 10, 10)
 
 
-def card10(rank, suit):
+def get_card(rank, suit):
     if rank == 1:
         return AceCard(rank, suit)
     elif 2 <= rank < 11:
