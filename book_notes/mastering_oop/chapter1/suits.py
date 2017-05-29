@@ -1,4 +1,4 @@
-__all__ = ["club", "diamond", "heart", "spade"]
+__all__ = ["Club", "Diamond", "Heart", "Spade"]
 
 
 HEART_SYMBOL = u'\u2661'
@@ -14,8 +14,8 @@ class Suit:
         self.symbol = symbol
 
 
-club = Suit("Club", CLUB_SYMBOL)
-diamond = Suit("Diamond", DIAMOND_SYMBOL)
-heart = Suit("Heart", HEART_SYMBOL)
-spade = Suit("Spade", SPADE_SYMBOL)
+Club = Suit("Club", CLUB_SYMBOL)
+Diamond = Suit("Diamond", DIAMOND_SYMBOL)
+Heart = Suit("Heart", HEART_SYMBOL)
+Spade = Suit("Spade", SPADE_SYMBOL)
 

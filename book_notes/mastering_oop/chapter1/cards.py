@@ -72,7 +72,7 @@ I did this to deal with the fact that the book was having me make a bunch of
 different kinds of factories. I just passed the func.
 """
 def get_deck(func):
-    return [func(rank, suit) for rank in range(1, 14) for suit in (club, diamond, heart, spade)]
+    return [func(rank, suit) for rank in range(1, 14) for suit in (Club, Diamond, Heart, Spade)]
 
 
 deck = get_deck(get_card_explicit)
