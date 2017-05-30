@@ -2,7 +2,6 @@ class SuperInt(int):
     """
     Redefine the add method.
     """
-
     def __init__(self, digit):
         self.digit = digit
 
@@ -21,20 +20,19 @@ class SuperList(list):
     everything we pass in. No different than surrounding it with [] but its
     still kinda cool.
     """
-
     def __init__(self, *args):
-        print(args)
-        super().__init__(x for x in args)
+        super().__init__(args)
 
     @classmethod
     def duplicate(cls, *args):
-        print(args)
-        return cls(args)
+        new_args = args + args
+        return cls(*new_args)
 
 
 def test_super_list():
     b = SuperList(1, 2, 3, "potato")
     c = [1, 2, 3]
+
 
 a = SuperList.duplicate(1, 2, 3)
 b = SuperList(4, 5, 6)
