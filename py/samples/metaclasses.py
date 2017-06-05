@@ -1,13 +1,12 @@
 class InterfaceMeta(type):
 
-    def __new__(cls, names, bases, attrs):
-        if not attrs.get("salad", None):
+    def __new__(cls, name, bases, attrs):
+        if "salad" not in attrs:
             attrs["salad"] = "salad"
-        return super(InterfaceMeta, cls).__new__(cls, names, bases, attrs)
+        return super().__new__(cls, name, bases, attrs)
 
 
-class Interface(object):
-    __metaclass__ = InterfaceMeta
+class Interface(metaclass=InterfaceMeta):
 
     def __init__(self, potato):
         self.potato = potato
@@ -15,4 +14,4 @@ class Interface(object):
 
 def test_meta():
     a = Interface("1")
-    assert a.salad
+    assert a.salad == "salad"
