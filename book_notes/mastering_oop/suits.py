@@ -1,4 +1,5 @@
-__all__ = ["Club", "Diamond", "Heart", "Spade"]
+__all__ = ["Club", "Diamond", "Heart", "Spade", "HEART_SYMBOL", "DIAMOND_SYMBOL",
+    "CLUB_SYMBOL", "SPADE_SYMBOL"]
 
 
 HEART_SYMBOL = u'\u2661'
@@ -18,4 +19,3 @@ Club = Suit("Club", CLUB_SYMBOL)
 Diamond = Suit("Diamond", DIAMOND_SYMBOL)
 Heart = Suit("Heart", HEART_SYMBOL)
 Spade = Suit("Spade", SPADE_SYMBOL)
-

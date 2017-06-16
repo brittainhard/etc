@@ -1,7 +1,8 @@
-from suits import *
+from ..suits import *
 
 
 __all__ = ["NumberCard", "AceCard", "FaceCard", "get_deck"]
+
 
 class Card:
 
