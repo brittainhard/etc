@@ -1,7 +1,7 @@
-from ..suits import *
+from suits import *
 
 
-class Card:.
+class Card:
     insure = False
 
     def __init__(self, rank, suit):
