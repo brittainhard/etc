@@ -1,4 +1,4 @@
-name: oop
+name: etc
 dependencies:
     - python=3
     - pytest

@@ -18,6 +18,10 @@ imap <Down> <NOP>
 imap <Left> <NOP>
 imap <Right> <NOP>
 
+"Deal with mac backspace problem.
+set backspace=2
+set backspace=indent,eol,start
+
 "Cursors
 highlight Folded ctermbg=2
 highlight TabLine ctermbg=2
