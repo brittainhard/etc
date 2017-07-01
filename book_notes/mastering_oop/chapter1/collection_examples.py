@@ -57,7 +57,6 @@ def test_extension():
     deck = DeckExtension()
 
 deck1 = DeckExtension()
-print(len(deck1))
 
 class DeckExtension2(list):
 
@@ -74,4 +73,5 @@ def test_extension2():
     deck = DeckExtension2(2)
 
 deck2 = DeckExtension2(2)
-print(len(deck2))
+
+Deck = DeckExtension
