@@ -13,7 +13,6 @@ class Circle:
         """
         Init is not a constructor.
         """
-        import pdb; pdb.set_trace()
         self.radius = radius
 
     @classmethod
@@ -26,6 +25,12 @@ class Circle:
         """
         radius = bbd / 2.0 / math.sqrt(2.0)
         return cls(radius)
+
+    @staticmethod
+    def angle_to_grade(angle):
+        """Since classes are basically namespaces, why not juse go ahead and use
+        the classes as namespaces?"""
+        return math.tan(math.raidus(angle)) * 100
 
     def area(self):
         return math.pi * self.radius ** 2.0

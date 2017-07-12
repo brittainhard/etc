@@ -2,7 +2,6 @@
 
 https://www.youtube.com/watch?v=HTLu2DFOdTg
 
-
 Self is the instance. Its already been made by the time its been called.
 It takes the variable radius and populates it in the dictionary.
 

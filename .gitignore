@@ -13,3 +13,4 @@ bin/
 pkg/
 build/
 __pycache__
+.idea
