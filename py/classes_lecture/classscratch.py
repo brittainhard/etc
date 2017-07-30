@@ -3,7 +3,7 @@ from example import Circle
 
 
 class Potato:
-    
+
     __slots__ = ["apple"]
 
     def __init__(self, potato):
@@ -40,4 +40,3 @@ b = Two(2)
 
 print(sys.getsizeof(a))
 print(sys.getsizeof(b))
-
