@@ -4,8 +4,8 @@ CFLAGS = -Wall -g
 DEPS = error.o
 HEADERS = apue.h
 
-program: $(DEPS) $(source)
-	$(CC) $(CFLAGS) $(source) -o $(EXE) $(DEPS)
+program: $(DEPS) $(SOURCE)
+	$(CC) $(CFLAGS) $(SOURCE) -o $(EXE) $(DEPS)
 
 clean:
-	rm -rf a.out *.o
+	rm -rf a.out *.o a.dSYM
