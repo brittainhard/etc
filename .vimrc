@@ -41,3 +41,6 @@ nnoremap <Leader>ev :tabedit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
 nnoremap <Leader>rp :!python %<cr>
 nnoremap <Leader>gr :cd `=GITROOT`<cr>:e 
+nnoremap <Leader>grt :cd `=GITROOT`<cr>:tabedit 
+nnoremap <Leader>grh :cd `=GITROOT`<cr>:sp 
+nnoremap <Leader>grv :cd `=GITROOT`<cr>:vs 

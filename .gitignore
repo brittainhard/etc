@@ -6,6 +6,7 @@
 *.beam
 a.out
 hello_world.c
+scratch.py
 DS_store
 *.swp
 *.dSYM
@@ -14,3 +15,4 @@ pkg/
 build/
 __pycache__
 .idea
+.cache
