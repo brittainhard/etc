@@ -18,6 +18,8 @@ imap <Down> <NOP>
 imap <Left> <NOP>
 imap <Right> <NOP>
 
+colorscheme slate
+
 "Deal with mac backspace problem.
 set backspace=2
 set backspace=indent,eol,start
