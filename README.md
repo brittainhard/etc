@@ -1,3 +1,3 @@
-# Samples
+# Go
 
-Sample programs of various programming languages. Focus on C, Python, and Go.
+Sample programs in Go.

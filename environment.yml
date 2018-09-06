@@ -1,6 +1,0 @@
-name: etc
-dependencies:
-    - python=3
-    - pytest
-    - ipython
-    - cython
