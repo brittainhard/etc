@@ -2,10 +2,7 @@ package main
 
 import "fmt"
 
-
-var c, python, java bool
-
 func main() {
-    var i int
-    fmt.Println(i, c, python, java)
+        a, b, c := 1, 2, 3
+        fmt.Println(a, b, c)
 }

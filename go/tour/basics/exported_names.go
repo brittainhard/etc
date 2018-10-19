@@ -1,13 +1,12 @@
-// In go, exported names begin with a capital letter. Importing math.pi breaks
-// the program, but math.Pi does not.
-
 package main
 
 import (
-    "fmt"
-    "math"
+        "fmt"
+        "math"
 )
 
 func main() {
-    fmt.Println(math.Pi)
+        // Doesn't work. Imported names have to be capitalized.
+        //fmt.Println(math.pi)
+        fmt.Println(math.Pi)
 }
